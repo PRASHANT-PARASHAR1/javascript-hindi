@@ -8,3 +8,7 @@ const newArr = myArray.join()
 console.log(myArray.slice(1,3))
 console.log(myArray.splice(1,3))
 
+let score1 = 100;
+let score2 = 300;
+let score3 = 300;
+console.log(Array.of(score1,score2,score3))
