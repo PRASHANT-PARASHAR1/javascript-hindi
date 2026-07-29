@@ -50,4 +50,20 @@ const regularUser = {
    
   }
 }
-console.log(regularUser.fullName.userFullname.firstName)
+//console.log(regularUser.fullName.userFullname.firstName)
+
+const course = {
+courseName:"js hindi",
+price:999,
+courseInstructor:"prashant parashar"
+}
+const {courseInstructor:simple} = course  //yahan pr courseInstructor ka simple nam rakha h
+console.log(simple);
+
+
+
+
+
+
+
+
