@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dom</title>
+    <style>
+        .bg-black{
+            background-color: #212121;
+            color:#fff;
+        }
+    </style>
+</head>
+<body class="bg-black">
+    <div>
+        <h1 id="para">Dom learning by prashant parashar</h1>
+    </div>
+    <ul >fruits
+        <li>banana</li>
+        <li class="orange">orange</li>
+        <li>lichi</li>
+    </ul>
+</body>
+<script>
+   const value = document.getElementById("para")
+   const changecolor=document.querySelector('.orange')
+   //changecolor.style.backgroundColor="orange"
+
+   const listItems=document.querySelectorAll('li')
+   listItems.forEach( (item)=>{
+item.style.backgroundColor="red"
+   })
+</script>
+</html>
