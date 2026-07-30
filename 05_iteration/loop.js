@@ -7,3 +7,7 @@ for(let i=0;i<myArray.length;i++){
     const result=myArray[i]
     console.log(result)
 }
+
+
+
+
