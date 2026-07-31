@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dom</title>
+</head>
+<body style="background-color: #212121;color:#fff">
+    <ul class="language">
+        <li>javascript</li>
+    </ul>
+</body>
+<script>
+    function addLanguage(langName){
+const listItem=document.createElement('li')
+listItem.innerHTML=langName
+document.querySelector('.language').appendChild(listItem)
+    }
+    addLanguage('python')
+    addLanguage('ruby')
+    addLanguage('next js')
+    addLanguage('java')
+    addLanguage('cpp')
+function addOptiLanguage(langName){
+const li=document.createElement('li')
+li.appendChild(document.createTextNode(langName))  //this method is best for coding
+document.querySelector('.language').appendChild(li)
+}
+addOptiLanguage('golang')
+//Edit value
+const secondLang=document.querySelector("li:nth-child(2)")
+//secondLang.innerHTML="prashant"    //this method also not good
+const newli = document.createElement('li')
+newli.textContent="mojo"
+secondLang.replaceWith(newli)
+
+
+//remove element
+const lastLang = document.querySelector('li:last-child')
+lastLang.remove()
+</script>
+</html>
