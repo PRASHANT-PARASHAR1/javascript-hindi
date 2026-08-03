@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>events</title>
+</head>
+<body>
+    <ul id="image">
+        <li><img
+        src="https://pbs.twimg.com/media/GRtvSIQbQAASygL.jpg:large"
+        alt="Virat Kohli"
+        width="100"
+        id="t20-worldcup"
+    ></li>
+    <p id="para"></p>
+     <li><img
+        src="https://i.pinimg.com/474x/a6/cb/c8/a6cbc86014be65551ab52aa287447a8e.jpg?nii=t"
+        alt="Virat Kohli"
+        width="100"
+    ></li>
+     <li><img
+        src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ3XqY3VBe-M7L7vKCPkTfBLhwfTLdWrMW-GmJgoU8oibf_2l16Aohq6xE&s=10"
+        alt="Virat Kohli"
+        width="100"
+    ></li>
+     <li><img
+        src="https://img.magnific.com/free-vector/happy-ram-navami-indian-festival-landscape-background-with-lord-rama_1055-23719.jpg?semt=ais_hybrid&w=740&q=80"
+        alt="Virat Kohli"
+        width="100"
+    ></li>
+    <li><a href="https://google.com"id="google">prashant-browser</a></li>
+    </ul>
+</body>
+<script>
+
+document.getElementById('image').addEventListener('click', function(e){
+    //console.log('clicked inside the ul')
+
+})
+
+    const para = document.getElementById('para')
+document.getElementById('t20-worldcup').addEventListener('click', function(e) {
+    //para.innerHTML = 'T20 World Cup 2024 - India defeated South Africa.'
+    //console.log('photo was clicked')
+    //e.stopPropagation()     //isse vo sirf photo ko hi click kREGA na ki ul ko bhi
+})
+
+document.getElementById('google').addEventListener
+('click',function(e){
+    // e.preventDefault()
+    // console.log('google link was clicked')
+})
+document.getElementById('image').addEventListener
+('click',function(e){
+    console.log(e.target.tagName)
+    if(e.target.tagName==='IMG'){
+        console.log(e.target.id)
+        const RemoveIt=e.target.parentNode
+        console.log(RemoveIt)
+        RemoveIt.remove()
+    }
+})
+
+</script>
+</html>
